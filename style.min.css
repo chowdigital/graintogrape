@@ -1513,11 +1513,9 @@ a.bg-light:hover,a.bg-light:focus,button.bg-light:hover,button.bg-light:focus{ba
 .card-img-64{width:64px;height:64px}
 .mml-1{margin-left:-0.25rem !important}
 .flex-1{-webkit-box-flex:1;-ms-flex:1;flex:1}
-body,p,.menu-item a{font-family:futura-pt,sans-serif;font-weight:300;font-style:normal}
-body strong,p strong,.menu-item a strong{font-weight:500}
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,.btn,button,input[type="button"],input[type="reset"],input[type="submit"]{font-family:futura-pt,sans-serif;font-weight:700;font-style:normal;letter-spacing:.1em}
-h3,.h3{font-family:playfair-display,serif;font-weight:400;font-style:normal}
-h4,.h4,.btn,button,input[type="button"],input[type="reset"],input[type="submit"],labelgit{font-family:playfair-display,serif;font-weight:400;font-style:italic}
+body{font-family:"Barlow",sans-serif;font-weight:300}
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-weight:300}
+h1,.h1{font-family:vinyl,sans-serif;font-weight:400;font-style:normal}
 .blockquote{padding:.5rem 1rem;border-left:.25rem solid #eceeef}
 .blockquote.text-right{border-right:.25rem solid #eceeef;border-left:0}
 .blockquote .bq-title{margin-bottom:0;font-size:1.5rem;font-weight:400}
