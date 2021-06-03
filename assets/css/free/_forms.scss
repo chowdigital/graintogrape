@@ -368,14 +368,14 @@
 
     @-webkit-keyframes autofill {
       to {
-        color: #495057;
+        color: $green-base;
         background: transparent;
       }
     }
 
     @keyframes autofill {
       to {
-        color: #495057;
+        color: $green-base;
         background: transparent;
       }
     }

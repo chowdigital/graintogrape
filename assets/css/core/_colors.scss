@@ -241,7 +241,7 @@ $orange-lighten-4:  #ffe0b2 !default;
 $orange-lighten-3:  #ffcc80 !default;
 $orange-lighten-2:  #ffb74d !default;
 $orange-lighten-1:  #ffa726 !default;
-$orange-base:       rgb(222,212,60)!default;
+$orange-base:       rgb(222,121,60)!default;
 $orange-darken-1:   #fb8c00 !default;
 $orange-darken-2:   #f57c00 !default;
 $orange-darken-3:   #ef6c00 !default;
@@ -631,7 +631,7 @@ $stylish-rgba: (
 );
 
 // Material colors
-$primary-color:        $purple-base !default;
+$primary-color:        $orange-base !default;
 $primary-color-dark:   #0d47a1 !default;
 $secondary-color:      #a6c !default;
 $secondary-color-dark: #93c !default;

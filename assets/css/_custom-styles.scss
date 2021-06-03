@@ -40,18 +40,16 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: $purple-base;
+    background-color: $white-base;
     //background: url('http://localhost:8888/BlackBook/wp-content/uploads/2020/08/copper.png') no-repeat 50% fixed / cover;
 }
 a {
     color:$white-base;
-    text-decoration: underline;
     font-weight: 500;
 
 }
 a:focus, a:hover {
     color:$grey-base;
-    text-decoration: underline;
     font-weight: 500;
 }
 
@@ -62,30 +60,32 @@ a:focus, a:hover {
 // change Navbar color on scroll 
 
 .top-nav-collapse {
-    background: $purple-base!important;
+    .navbar-brand img{
+        height: 30px;
+        width: auto;
+        transition: 0.7s; /* Adds a transition effect when the padding is decreased */
+
+    
+    }
+   
 }
 
 .navbar {
-background: $purple-base;
+background: $orange-base;
 }
-    @include media-breakpoint-up(md) {
-        .navbar {
-            background: $purple-base;
-            }
-      }
-
+  
 //navbar logo
 
-.navbar-brand{
-    font-family: futura-pt, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0.1em;
+.navbar-brand img{
+    height: 60px;
+    width: auto;
+    transition: 0.7s; /* Adds a transition effect when the padding is decreased */
+
 
 }
 
 .navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-    color:$blue-base;
+    color:$red-base;
 }
       
 
@@ -116,7 +116,7 @@ background: $purple-base;
 
 
 footer {
-    background-color: #242424;
+    background-color: $grey-base;
     margin-top: 4rem;
     .container {
         padding-top:100px
@@ -137,7 +137,7 @@ footer {
 
 .sign-up{
     font-size: 2em;
-    color: $blue-base;
+    color: $green-base;
 }
 @include media-breakpoint-up(sm) {
     .sign-up{
@@ -243,7 +243,7 @@ footer {
 }
 
 .blog-content-box {
-    background-color: $purple-base;
+    background-color: $orange-base;
     padding: 4rem;
     color: #fff;
     .entry-header{
@@ -266,14 +266,13 @@ footer {
     border: 1px solid $blue-base;
 }
 .btn-primary{
-    background-color: $blue-base;
+    background-color: $orange-base;
     font-size:1em;
     margin: 0;
     padding: 0.5em 2em;
 }
 .btn-primary:hover, button:hover{
-    color: $blue-base;
-    border-color: $blue-base;
+    color: $yellow-base;
 }
 
 //Resize Navbar buttons
