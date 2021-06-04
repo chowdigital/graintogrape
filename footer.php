@@ -11,12 +11,7 @@
 
 ?>
 
-<div class="container">
-  <div class="text-box col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-    <h4>Welcome to Old Brompton</h4>
-    <h3>wine bar and deli in South Kensington. </h3>
-  </div>
-</div>
+
 
 <!-- Footer -->
 <footer class="page-footer font-small dark-background">

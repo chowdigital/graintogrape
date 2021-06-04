@@ -178,9 +178,9 @@ footer {
     background-color: $green-base;
     padding: 4rem;
     color: $grey-base;
-    .entry-header h1, .entry-header h2{
+    .entry-header h2{
         display: inline-block;
-        border-bottom: 2px solid $grey-base;
+        border-bottom: 4px solid $grey-base;
         margin-bottom: 0.5em;
         padding-bottom: 0.5em;
     }
@@ -216,6 +216,7 @@ footer {
         }
     }
 }
+
 .image-box-3{
     min-height: 400px;
 }
@@ -232,6 +233,36 @@ footer {
     }
 }
 
+.content-box-4{
+
+    color: $grey-base;
+    section{
+        padding:0em 1em;
+    }
+   .entry-header h2{
+        display: inline-block;
+        border-bottom: 2px solid $grey-base;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .content-box-4{
+    
+        section{
+            padding:0em 5em;
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    .content-box-4{
+    
+        section{
+            padding:0em 6em;
+        }
+    }
+}
 //old blocks
 .blog-content-box {
     background-color: $orange-base;
