@@ -9,6 +9,9 @@
 //  3. Footer
 //  4. Content Boxes
 //  5. Buttons
+//  6. Page Header 
+//  7. Blog Roll Pages
+
 
 
 
@@ -45,23 +48,29 @@ body {
 }
 a {
     color:$white-base;
-    font-weight: 500;
 
 }
 a:focus, a:hover {
-    color:$grey-base;
-    font-weight: 500;
+    color:$green-base;
 }
 
 
 // 2. Navigation
 // ===========================================================================
 
+.nav-link {
+ 
+    padding: .2rem 1rem;
+}
+#bs-example-navbar-collapse-1{
+    margin-top:1em;
+}
+
 // change Navbar color on scroll 
 
 .top-nav-collapse {
     .navbar-brand img{
-        height: 30px;
+        height: 50px;
         width: auto;
         transition: 0.7s; /* Adds a transition effect when the padding is decreased */
 
@@ -85,7 +94,7 @@ background: $orange-base;
 }
 
 .navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-    color:$red-base;
+    color:$green-base;
 }
       
 
@@ -151,6 +160,12 @@ footer {
     .sign-up{
         font-size: 4em;
     }
+}
+
+// Cloudsdale Link 
+
+.black-background{
+    background-color: $grey-darken-4;
 }
 // 4. Content Boxes
 // ===========================================================================
@@ -259,20 +274,23 @@ footer {
 
 // Hightlight Book BTN
 .book-btn {
-    border: 1px solid $white-base;
+   
     padding: 0em 2em;
 }
 .book-btn:hover {
-    border: 1px solid $blue-base;
+  
 }
 .btn-primary{
+    
     background-color: $orange-base;
     font-size:1em;
     margin: 0;
     padding: 0.5em 2em;
+    border: none;
 }
-.btn-primary:hover, button:hover{
+.btn-primary:hover, button:hover, #mc-embedded-subscribe:hover{
     color: $yellow-base;
+    border-color: $orange-base;
 }
 
 //Resize Navbar buttons
@@ -281,11 +299,14 @@ footer {
     padding-left: 1rem;
 }
 
-//Custom page header
-.gradient-custom {
-background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,0.7077031496192228) 0%, rgba(0,0,0,0) 38%);
-}
+
+.greenHover:hover {
+        transition: .4s;
+        color: $green-base;
+    }
+    
+// 6. Header Settings
+// ===========================================================================
 
 .page-img-header{
     height: 100%;
@@ -295,7 +316,28 @@ background: linear-gradient(180deg, rgba(0,0,0,0.7077031496192228) 0%, rgba(0,0,
     margin-top: -50vh;
 }
 
+// 6. Blog Roll Pages
+// ===========================================================================
+.square-img {
+    padding-bottom: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
+// Set size for thumbnail images
+.thumb-wrapper{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+   
+    img {
+        object-fit: cover;
+    }
+
+}
+
+// X. Misc
+// ===========================================================================
 
 //fonts
 
@@ -336,7 +378,5 @@ background: linear-gradient(180deg, rgba(0,0,0,0.7077031496192228) 0%, rgba(0,0,
 
 // End Hide Entry Footer
 
-body, p {
-    font-size:1.2em !important;
-}
+
     

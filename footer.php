@@ -101,60 +101,48 @@
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-sm-6 col-lg-2 offset-lg-1">
+      <div class="col-sm-10 offset-1 col-lg-4 offset-lg-2">
 
-        <!-- Links -->
-        <h2 class="h3-responsive font-weight-bold my-4">OPENING TIMES</h2>
-    <!--Section description-->
-
-              <p class="no-line-break"><strong>Monday - Sunday </strong></p>
-              <p >10am 'til late</p>
-              
-            
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-sm-6 col-lg-3">
-
-        <!-- Links -->
-        <h2 class="h3-responsive font-weight-bold my-4">OLD BROMPTON</h2>
-    <!--Section description-->
-   
+  
   
 
-
-
-
    
-        <ul class="list-unstyled">
-          <li>
-          <p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;158 Old Brompton Rd,<br> Kensington <br>London SW5 0BA</p>
-          </li>
-          <li>
-          </li>
-          <li>
-          <a href="tel:+442080661582"><p><i class="fas fa-phone mt-4"></i>&nbsp;&nbsp;020 8066 1582</a></p>
-          </li>
-          <li>
-          <a href="mailto:info@oldbrompton.co.uk"><p><i class="fas fa-envelope mt-4"></i>&nbsp;&nbsp;info@oldbrompton.co.uk</a></p>
-          </li>
-          <li>
-          <a href="careers"><i class="fa fa-rocket mt-4" aria-hidden="true"></i>&nbsp;&nbsp;Careers</a> 
-          </li>
-          <li>
-          <a href="privacy-policy"><i class="fa fa-lock mt-4" aria-hidden="true"></i>&nbsp;&nbsp;Privacy Policy</a>
-          </li>
-          <li>  
-      <!--    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x mt-4"></i> &nbsp;&nbsp;</a>
-          <a href="https://twitter.com/"><i class="fab fa-twitter fa-2x mt-4"></i> &nbsp;&nbsp;</a> -->
-          <a href="https://www.instagram.com/old.brompton/"><i class="fab fa-instagram fa-2x mt-4"></i> &nbsp;&nbsp;</a>
-          </li>
-          
-        </ul>
 
-      </div>
-      <!-- Grid column -->
+        <!-- Links -->
+    <!--Section description-->
+    <div class="row">
+    <div class="mr-5 mb-3 pr-5"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gtg_logo_white.svg" class="img-fluid" alt="Grain to Grape" ></div>
+    </div>
+                   <div class="row mb-3">
+                     <div class="col-1 text-center"> <a href="https://www.instagram.com/graintogrape/?hl=en" class="greenHover"><i class="fab fa-instagram fa-2x"></i></a></div>
+                     <div class="offset-1 col-1 text-center"> <a href="https://www.facebook.com/graintogrape" class="greenHover"><i class="fab fa-facebook-square fa-2x"></i> </a></div>
+                     <div class="offset-1 col-1 text-center"> <a href="https://twitter.com/graintogrape" class="greenHover"><i class="fab fa-twitter fa-2x"></i></i></a></div>
+                     <div class="offset-1 col-1 text-center"> <a href="https://www.linkedin.com/in/harryjcrowther" class="greenHover"><i class="fab fa-linkedin-in fa-2x"></i></a></div>
+
+                   </div>
+                   <div class="row">
+                     <div class="col-1 text-center"><i class="fa fa-phone fa-lg"></i></div>
+                     <div class="offset-1 col-10"><p> xxx xxxx xxx</p></div>
+                   </div>
+                   <div class="row">
+                     <div class="col-1 text-center"><i class="fa fa-envelope fa-lg"></i></div>
+                     <div class="offset-1 col-10"> xxxx@graintogrape.co.uk</p></div>
+                   </div>
+                   <!--
+                   <div class="row">
+                     <div class="col-1 text-center"><i class="fas fa-map-pin fa-lg"></i></div>
+                     <div class="offset-1 col-10"><p>1st Floor Studio <br> 33 Aybrook St, Marylebone <br> London, W1U 4AP</p></div>
+                   </div> -->
+                  
+                   <div class="row mt-5">
+                     <div class="col-1 text-center"> <i class="fas fa-copyright fa-lg"></i></div>
+                     <div class="offset-1 col-10">  <p>COPYRIGHT GRAIN TO GRAPE 2021</p></div>
+                   </div>
+                  
+  
+      
+
+
 
     </div>
     
@@ -162,11 +150,13 @@
 
   </div>
   <!-- Footer Links -->
-
+</div>
   <!-- Copyright -->
-  <div class="text-center py-3 black-background">A 
-    <a href="https://twitter.com/blackbooksoho"> Cloudsdale</a> Website
+  <div class="mt-5 text-center py-3 black-background"> 
+    <a href="https://cloudsdale.co.uk/">   <img src="https://cloudsdale.co.uk/wp-content/themes/Cloudsdale_2.0/assets/img/cloudsdale_logo.svg" alt="Cloudsdale" style="height:20px">
+</a>
   </div>
+
   <!-- Copyright -->
 
 </footer>
