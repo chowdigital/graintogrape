@@ -186,7 +186,36 @@ footer {
     }
 }
 
+.content-box-2{
+    background-color: $orange-base;
+    color: $white-base;
+    section{
+        padding:0em 1em;
+    }
+   .entry-header h2{
+        display: inline-block;
+        border-bottom: 2px solid $white-base;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
 
+@include media-breakpoint-up(lg) {
+    .content-box-2{
+    
+        section{
+            padding:0em 5em;
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    .content-box-2{
+    
+        section{
+            padding:0em 6em;
+        }
+    }
+}
 .image-box-3{
     min-height: 400px;
 }
