@@ -140,7 +140,7 @@
 <!-- Block 4 >> -->
 <div class="pt-6 pb-6">
     <div class="container pt-5 pb-5">
-      <div class="row">
+      <div class="row content-box-5">
       <header class="entry-header text-center">
              <h2 class="display-5">Here’s what other legends said…</h2>
         </header><!-- .entry-header -->
@@ -215,7 +215,10 @@
   <div class="pt-6 pb-6">
    
   <!--Grid row-->
-  <div class="row wow fadeIn gx-5">
+  <div class="row wow fadeIn gx-5 content-box-5">
+      <header class="entry-header text-center">
+             <h2 class="display-5">What we</h2>
+        </header><!-- .entry-header -->
     <?php
     // The Query
     $the_query = new WP_Query( 'cat=2&posts_per_page=6' );

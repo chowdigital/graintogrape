@@ -1,111 +1,112 @@
 <?php /* Template Name: Contact*/ get_header(); ?>
 
-<main id="primary" class="site-main container">
-<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-<p class="">Do you have any questions? Please do not hesitate to contact us directly.</p>
-<!--Grid row-->
-<div class="row wow fadeIn">
+<div class="page-img-header d-flex z-depth-3" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
+
+  <div class="mask gradient-custom" style="width: 100%; height: 100%;">
+
+    </div>
+  </div>
 
 
 
-	<!--Section: Contact v.2-->
-	<section class="mb-4">
+  <main id="primary" class="site-main container  pt-6 pb-6">
 
-	
-	
-		<!--Section description-->
-		
+  <div class="z-depth-3">
+  <div class="default-content-box col-12 overlap-cover" id="contact-form"> 
 
-		<div class="row">
 
-			<!--Grid column-->
-			<div class="col-md-6 mb-md-0 mb-5">
-				<form id="contact-form" name="contact-form" action="mail.php" method="POST">
+  <header class="entry-header">
+  <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+  <!--Grid row-->
 
-					<!--Grid row-->
-					<div class="row">
+        <!--Section: Contact v.2-->
+        <section class="section">
 
-						<!--Grid column-->
-						<div class="col-md-6">
-							<div class="md-form mb-0">
-								<input type="text" id="name" name="name" class="form-control">
-								<label for="name" class="">Your name</label>
-							</div>
-						</div>
-						<!--Grid column-->
+     
+   
+          
+            <div class="row">
 
-						<!--Grid column-->
-						<div class="col-md-6">
-							<div class="md-form mb-0">
-								<input type="text" id="email" name="email" class="form-control">
-								<label for="email" class="">Your email</label>
-							</div>
-						</div>
-						<!--Grid column-->
+                <!--Grid column-->
+                <div class="col-md-8 col-xl-9">
+                    <form id ="contact-form" name="contact-form" action="<?php echo get_template_directory_uri(); ?>/mail.php" method="POST"  onsubmit="return validateForm()" >
 
-					</div>
-					<!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
 
-					<!--Grid row-->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="md-form mb-0">
-								<input type="text" id="subject" name="subject" class="form-control">
-								<label for="subject" class="">Subject</label>
-							</div>
-						</div>
-					</div>
-					<!--Grid row-->
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <div class="md-form">
+                                        <input type="text" id="name" name="name" class="form-control form-dark">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
 
-					<!--Grid row-->
-					<div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <div class="md-form">
+                                        <input type="text" id="email" name="email" class="form-control form-dark">
+                                        <label for="email" class="">Your email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
 
-						<!--Grid column-->
-						<div class="col-md-12">
+                        </div>
+                        <!--Grid row-->
 
-							<div class="md-form">
-								<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-								<label for="message">Your message</label>
-							</div>
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <input type="text" id="subject" name="subject" class="form-control form-dark">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
 
-						</div>
-					</div>
-					<!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
 
-				</form>
+                            <!--Grid column-->
+                            <div class="col-md-12">
 
-				<div class="text-center text-md-left">
-					<a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();"> <i class="fas fa-paper-plane"></i> Send</a>
-				</div>
-				<div class="status"></div>
-			</div>
-			<!--Grid column-->
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" class="md-textarea form-dark"></textarea>
+                                    <label for="message">Tell me more</label>
+                                </div>
 
-			<!--Grid column-->
-			<div class="col-sm-12 col-md-2">
-</div>
-			<div class="col-sm-12 col-md-4">
-				<ul class="list-unstyled mb-0">
-					<li>
-					<h4><i class="fas fa-phone mt-4 fa-1.5x"></i> 01205 369477 </h4>
-					</li>
+                            </div>
+                        </div>
+                        <!--Grid row-->
 
-					<li>
-						<h4><i class="fas fa-phone mt-4 fa-1.5x"></i> 07788 550074 </h4>
-					</li>
+                    </form>
 
-					<li>
-						<h4><i class="fas fa-envelope mt-4 fa-1.5x"></i> info@gatehousetraining.com</h4>
-					</li>
-				</ul>
-			</div>
-			<!--Grid column-->
+                    <div class="center-on-small-only">
+                        <a class="btn btn-primary" onclick="validateForm()">Send</a>
+                    </div> <div class="status" id="status"></div>
+                </div>
+                <!--Grid column-->
 
-		</div>
+                <!--Grid column-->
+                <div class="col-md-4 col-xl-3">
+                   
+                </div>
+                <!--Grid column-->
 
-	</section>
-	<!--Section: Contact v.2-->
-</div>
+            </div>
+
+        </section>
+        <!--Section: Contact v.2-->
+
+
+
 </main>
-<?php get_template_part( 'template-parts/banner', 'page' ); ?>
+		
 <?php get_footer(); ?>

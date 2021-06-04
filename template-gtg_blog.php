@@ -1,6 +1,5 @@
-<?php /* Template Name: Events*/ get_header(); ?>
-
-  <div class="page-img-header d-flex z-depth-3" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
+<?php /* Template Name: Blog*/ get_header(); ?>
+<div class="page-img-header d-flex z-depth-3" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
 
   <div class="mask gradient-custom" style="width: 100%; height: 100%;">
 
@@ -9,18 +8,20 @@
 
 
 
+
   <main id="primary" class="site-main container  pt-6 pb-6">
   <div class="z-depth-3">
-  <div class="menu-content-box col-12">
+  <div class="default-content-box col-12  overlap-cover"> 
+
 
   <header class="entry-header">
   <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
   <!--Grid row-->
-  <div class="row wow fadeIn">
+  <div class="row wow fadeIn gx-5">
     <?php
     // The Query
-    $the_query = new WP_Query( 'cat=3&posts_per_page=24' );
+    $the_query = new WP_Query( 'cat=1&posts_per_page=24' );
     //posts_per_page=5'
 
 
@@ -33,26 +34,29 @@
 
 
         <!--Grid column-->
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex flex-column">
      
-
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 d-flex flex-column">
+        <a href="<?php echo get_permalink() ?>">
+     
             <!--Featured image-->
-            <div class="view overlay hm-white-slight rounded z-depth-2 mb-4 thumb-wrapper" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
-
-             
+          
+            <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
             </div>
 
             <div>
-            <h4 class="mb-3 font-weight-bold">
-                <strong><?php the_title(); ?></strong>
-            </h4>
-          
+           <h2 class="mb-3 font-weight-bold text-primary">
+              <?php the_title(); ?> 
+            </h2>
+       
+          </a>
           
             <p class="grey-text"><?php the_excerpt(); ?></p>
             </div>
             <div class="mt-auto">
-            <a href="<?php echo get_permalink() ?>"><button type="button" class="btn btn-light">Find out More </button></a>
+           
             </div>
+           
+            <a href="<?php echo get_permalink() ?>"><button type="button" class="btn btn-primary">Read More </button></a>
         </div>
         <!--Grid column-->
 
@@ -69,7 +73,5 @@
     </div>
     </div>
 </main>
-
-
 
 <?php get_footer(); ?>

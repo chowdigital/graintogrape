@@ -8,15 +8,17 @@
 
 
 
+
   <main id="primary" class="site-main container  pt-6 pb-6">
   <div class="z-depth-3">
-  <div class="menu-content-box col-12">
+  <div class="default-content-box col-12  overlap-cover"> 
+
 
   <header class="entry-header">
   <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
   <!--Grid row-->
-  <div class="row wow fadeIn gx-5">
+  <div class="row wow fadeIn gx-5 col-lg-10 offset-lg-1">
     <?php
     // The Query
     $the_query = new WP_Query( 'cat=2&posts_per_page=24' );
@@ -33,7 +35,7 @@
 
         <!--Grid column-->
      
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex flex-column">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 d-flex flex-column">
         <a href="<?php echo get_permalink() ?>">
      
             <!--Featured image-->
@@ -42,18 +44,19 @@
             </div>
 
             <div>
-           <h2 class="mb-3 font-weight-bold">
+           <h2 class="mb-3 font-weight-bold text-primary">
               <?php the_title(); ?> 
             </h2>
-          
+       
+          </a>
           
             <p class="grey-text"><?php the_excerpt(); ?></p>
             </div>
             <div class="mt-auto">
            
             </div>
-            </a>
-            <a href="<?php echo get_permalink() ?>"><button type="button" class="btn btn-light">Find out More </button></a>
+           
+            <a href="<?php echo get_permalink() ?>"><button type="button" class="btn btn-primary">Find out More </button></a>
         </div>
         <!--Grid column-->
 

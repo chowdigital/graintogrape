@@ -12,23 +12,26 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-<header class="entry-header pb-4">
-
-			<?php
-			if ( is_singular() ) :
-				the_title( '<h1 class="">', '</h1>' );
-			else :
-				the_title( '<h2 class=""><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			endif;
-
-			if ( 'post' === get_post_type() ) :
-				?>
-				
-			<?php endif; ?>
-
-</header><!-- .entry-header -->
+<div class="row">
 
 
+	<header class="entry-header pb-4 col-12 col-md-8">
+
+				<?php
+				if ( is_singular() ) :
+					the_title( '<h1 class="">', '</h1>' );
+				else :
+					the_title( '<h2 class=""><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				endif;
+
+				if ( 'post' === get_post_type() ) :
+					?>
+					
+				<?php endif; ?>
+
+	</header><!-- .entry-header -->
+
+</div>
 		<?php
 		the_content(
 			sprintf(

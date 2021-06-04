@@ -11,6 +11,9 @@
 //  5. Buttons
 //  6. Page Header 
 //  7. Blog Roll Pages
+//  8. Default Page Layout
+//  9. Single Post
+// 10. Contact Form Page
 
 
 
@@ -30,6 +33,7 @@ body,
   height:100%; 
 
 }
+
  
   // Settings for navbar in edit mode
 body.logged-in {
@@ -194,7 +198,7 @@ footer {
     }
    .entry-header h2{
         display: inline-block;
-        border-bottom: 2px solid $white-base;
+        border-bottom: 4px solid $white-base;
         margin-bottom: 0.5em;
         padding-bottom: 0.5em;
     }
@@ -234,7 +238,6 @@ footer {
 }
 
 .content-box-4{
-
     color: $grey-base;
     section{
         padding:0em 1em;
@@ -263,6 +266,17 @@ footer {
         }
     }
 }
+
+.content-box-5, .content-box-6 {
+    color: $grey-base;
+    .entry-header h2{
+        display: inline-block;
+        border-bottom: 4px solid $grey-base;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
+
 //old blocks
 .blog-content-box {
     background-color: $orange-base;
@@ -390,6 +404,42 @@ footer {
 // 6. Header Settings
 // ===========================================================================
 
+
+.default-content-box{
+    color: $grey-base;
+    .entry-header h1, .entry-header h2{
+        display: inline-block;
+        border-bottom: 4px solid $grey-base;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
+
+
+// 6. Blog Roll Pages
+// ===========================================================================
+.square-img {
+    padding-bottom: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+// Set size for thumbnail images
+.thumb-wrapper{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+   
+    img {
+        object-fit: cover;
+    }
+
+}
+
+
+// 8. Default Page Layout
+// ===========================================================================
+
 .page-img-header{
     height: 100%;
     height: 80vh;
@@ -417,24 +467,51 @@ footer {
     margin-top: -50vh;
 }
 
-// 6. Blog Roll Pages
-// ===========================================================================
-.square-img {
-    padding-bottom: 100%;
-    overflow: hidden;
-    position: relative;
+
+.default-content-box {
+    padding:5em;
+    background-color: $white-base;
 }
 
-// Set size for thumbnail images
-.thumb-wrapper{
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-   
-    img {
-        object-fit: cover;
-    }
+// 9. Single Post
+// ===========================================================================
 
+.single-post {
+    height: 150px;
+}
+.post-thumb {
+    background-color: $orange-base;
+    height: 300px;
+    width:300px;
+    margin-right:auto;
+    margin-left:auto;
+    position: relative;
+    z-index:3;
+}
+
+@include media-breakpoint-up(lg) {
+    .post-thumb  {
+        margin-right:10%;
+   
+    }
+}
+
+.overlap-post {
+    position: relative;
+    z-index: 1;
+    margin-top: -150px;
+    padding-top: 250px;
+}
+
+// 10. Contact Form Page
+// ===========================================================================
+
+
+#contact-form{
+}
+
+.form-dark   { 
+    color: $black-base !important;
 }
 
 // X. Misc
@@ -480,4 +557,3 @@ footer {
 // End Hide Entry Footer
 
 
-    

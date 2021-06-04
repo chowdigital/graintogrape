@@ -11,7 +11,7 @@
 </div>
 <main id="primary" class="site-main container  pt-6 pb-6">
   <div class="z-depth-3">
-  <div class="menu-content-box">
+  <div class="default-content-box">
 
 		<?php
 		while ( have_posts() ) :
@@ -44,7 +44,7 @@
 
     <div  class="container pb-6">
 <section class="z-depth-3">
-  <div class="menu-content-box col-12">
+  <div class="default-content-box col-12">
   <h1 class="entry-title">The Cavendish at Home</h1>
  
   <!--Grid row-->

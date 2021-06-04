@@ -158,14 +158,14 @@ function wordpress_bootstrap_starter_theme_scripts() {
 	//wp_enqueue_script( 'wordpress-bootstrap-starter-theme-popper', get_template_directory_uri() . '/assets/js/popper.min.js', array('jquery'), false );	
 	//wp_enqueue_script( 'wordpress-bootstrap-starter-theme-vendor-scripts', get_template_directory_uri() . '/assets/js/vendor.min.js', array('jquery'), false );	
 	//wp_enqueue_script( 'wordpress-bootstrap-materiel', get_template_directory_uri() . '/assets/js/materiel.min.js', array('jquery'), false );	
-	//wp_enqueue_script( 'wordpress-bootstrap-starter-theme-custom-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array('customize-preview'), false );	
 
 
 	wp_enqueue_script( 'jQuery', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), '3.3.1', true );
     wp_enqueue_script( 'Tether', get_template_directory_uri() . '/assets/js/popper.min.js', array(), '1.0.0', true );
     wp_enqueue_script( 'Bootstrap', get_template_directory_uri() . '/assets/js/vendor.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'MDB', get_template_directory_uri() . '/assets/js/mdb.min.js', array(), '1.0.0', true );
-		
+	wp_enqueue_script( 'contact', get_template_directory_uri() . '/assets/js/custom/contact.js', array(), '1.0.0', true );
+
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -216,20 +216,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 // Google Tag Start
 
-add_action('wp_head','my_analytics', 20);
-function my_analytics() {
-	?>
-         <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6YQ1L8D7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-J6YQ1L8D7L');
-</script>
-
-	<?php
-}
 
 // Google Tag End
+
+function load_scripts() {
+    global $post;
+
+    if( is_page() || is_single() )
+    {
+        switch($post->post_name) // post_name is the post slug which is more consistent for matching to here
+        {
+            case '85':
+                wp_enqueue_script('', get_template_directory_uri() . 'assets/js/custom/contact.js', array('jquery'), '', false);
+                break;
+           
+        }
+    } 
+}
+
+add_action('wp_enqueue_scripts', 'load_scripts');
