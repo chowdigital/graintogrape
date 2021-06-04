@@ -7,7 +7,7 @@
 //  1. Header Settings
 //  2. Navigation
 //  3. Footer
-//  4. Content Boxes
+//  4. Blocks
 //  5. Buttons
 //  6. Page Header 
 //  7. Blog Roll Pages
@@ -167,8 +167,54 @@ footer {
 .black-background{
     background-color: $grey-darken-4;
 }
-// 4. Content Boxes
+// 4. Blocks
 // ===========================================================================
+
+  .image-box-1{
+    min-height: 400px;
+}
+
+.content-box-1 {
+    background-color: $green-base;
+    padding: 4rem;
+    color: $grey-base;
+    .entry-header h1, .entry-header h2{
+        display: inline-block;
+        border-bottom: 2px solid $grey-base;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
+
+
+.image-box-3{
+    min-height: 400px;
+}
+
+.content-box-3 {
+    background-color: $red-base;
+    padding: 4rem;
+    color: $white-base;
+    .entry-header h1, .entry-header h2{
+        display: inline-block;
+        border-bottom: 2px solid $white-base;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
+
+//old blocks
+.blog-content-box {
+    background-color: $orange-base;
+    padding: 4rem;
+    color: #fff;
+    .entry-header{
+        display: inline-block;
+        border-bottom: 1px solid $white-base;
+        margin-bottom: 2em;
+    }
+}
+
 
 
 .text-box{
@@ -241,49 +287,25 @@ footer {
         width: 50%;
     }
   }
-  .menu-image-box{
-    min-height: 400px;
-}
-
-.menu-content-box {
-    background-color: $blue-base;
-    padding: 4rem;
-    color: #fff;
-    .entry-header h1, .entry-header h2{
-        display: inline-block;
-        border-bottom: 1px solid white;
-        margin-bottom: 0.5em;
-        padding-bottom: 0.5em;
-    }
-}
-
-.blog-content-box {
-    background-color: $orange-base;
-    padding: 4rem;
-    color: #fff;
-    .entry-header{
-        display: inline-block;
-        border-bottom: 1px solid $white-base;
-        margin-bottom: 2em;
-    }
-}
-
 // 5. Buttons
 // ===========================================================================
 
 
 // Hightlight Book BTN
 .book-btn {
-   
     padding: 0em 2em;
 }
 .book-btn:hover {
   
 }
 .btn-primary{
-    
+    font-family: vinyl, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
     background-color: $orange-base;
     font-size:1em;
+    margin-bottom: 0rem;
     margin: 0;
     padding: 0.5em 2em;
     border: none;
@@ -312,6 +334,25 @@ footer {
     height: 100%;
     height: 80vh;
 }
+
+.header-text {
+    color: $white-base;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@include media-breakpoint-up(lg) {
+    .header-text {
+        font-size: 2.5em;   
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .header-text {
+        font-size: 3em;   
+    }
+}
+
 .overlap-cover{
     margin-top: -50vh;
 }
