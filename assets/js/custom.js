@@ -35,7 +35,7 @@ function validateForm() {
     'message': $('textarea[name=message]').val()
   };
   $.ajax({
-    url: "http://localhost:8888/grainToGrape/wp-content/themes/graintogrape/mail.php",
+    url: "https://www.graintogrape.co.uk/wp-content/themes/graintogrape/mail.php",
     type: "POST",
     data: formData,
     success: function success(data, textStatus, jqXHR) {

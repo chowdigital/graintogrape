@@ -33,8 +33,13 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+			
 </div>
+<div class="call-to-action text-center">
+  <a href="../lets-talk/"><button type="button" class="btn btn-primary">Let's Talk</button></a>
+  </div>
 	</div>
+
 	</main><!-- #main -->
 
 <?php

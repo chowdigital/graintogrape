@@ -2714,6 +2714,12 @@ footer .md-form label{color:#fff}
 .btn-primary:hover,button:hover,input:hover[type="button"],input:hover[type="reset"],input:hover[type="submit"],button:hover,#mc-embedded-subscribe:hover{color:#f1d783;border-color:#de793c}
 .navbar-expand-lg .navbar-nav .nav-link{padding-right:1rem;padding-left:1rem}
 .greenHover:hover{-webkit-transition:.4s;transition:.4s;color:#c6d22e}
+.call-to-action{width:100%}
+.call-to-action{width:100%;padding-bottom:5em}
+.pagenav a{font-size:1.5em;color:#4f4f4f}
+.pagenav a:focus,.pagenav a:hover{color:#c6d22e}
+.pagenav .alignleft{padding:5em}
+.pagenav .alignright{padding:5em}
 .default-content-box{color:#4f4f4f}
 .default-content-box .entry-header h1,.default-content-box .entry-header .h1,.default-content-box .entry-header h2,.default-content-box .entry-header .h2{display:inline-block;border-bottom:4px solid #4f4f4f;margin-bottom:.5em;padding-bottom:.5em}
 .square-img{padding-bottom:100%;overflow:hidden;position:relative}
@@ -2727,6 +2733,8 @@ footer .md-form label{color:#fff}
 .post-thumb{background-color:#de793c;height:300px;width:300px;margin-right:auto;margin-left:auto;position:relative;z-index:3}
 .overlap-post{position:relative;z-index:1;margin-top:-150px;padding-top:250px}
 .form-dark{color:#1c1c4d !important}
+.wp-block-separator{border-bottom:4px solid #c6d22e;margin:4em 6em}
+.wp-block-image img{max-width:100%;height:auto}
 .pt-6{margin-top:7rem}
 .pb-6{margin-bottom:7rem}
 .fc-wide{padding-left:calc(var(--bs-gutter-x) / 2)}

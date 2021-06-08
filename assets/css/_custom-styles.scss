@@ -14,6 +14,7 @@
 //  8. Default Page Layout
 //  9. Single Post
 // 10. Contact Form Page
+// 11. Customise Wordpress Guttenberg Blocks
 
 
 
@@ -401,6 +402,35 @@ footer {
         color: $green-base;
     }
     
+.call-to-action{
+    width: 100%;
+    
+}
+.call-to-action{
+    width: 100%;
+    padding-bottom: 5em;
+ 
+    
+} 
+
+
+//PAGENATION
+.pagenav a{
+    font-size: 1.5em;
+    color: $grey-base;
+  
+}
+.pagenav a:focus, .pagenav a:hover{
+    color: $green-base;
+}
+.pagenav{
+    .alignleft{
+        padding: 5em;
+    }
+    .alignright{
+        padding: 5em;
+    }
+}
 // 6. Header Settings
 // ===========================================================================
 
@@ -513,6 +543,23 @@ footer {
 .form-dark   { 
     color: $black-base !important;
 }
+
+
+
+
+// 11. Customise Wordpress Guttenberg Blocks
+// ===========================================================================
+
+.wp-block-separator{
+    border-bottom: 4px solid $green-base;
+    margin: 4em 6em;
+}
+.wp-block-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 // X. Misc
 // ===========================================================================

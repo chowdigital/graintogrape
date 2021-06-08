@@ -4,7 +4,7 @@
 
 <div class="view full-page-intro z-depth-3">
 
-<div class="view full-page-intro" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/g2g_01.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+<div class="view full-page-intro" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
  
 		 </div>
 <!-- Mask & flexbox options-->
@@ -57,7 +57,7 @@
             endwhile; else: ?>
             <p>Sorry, no posts matched your criteria.</p>
             <?php endif; ?>
-            <a href="at-home"><button type="button" class="btn btn-primary waves-effect waves-light">find out more</button></a>
+            <a href="lets-talk"><button type="button" class="btn btn-primary waves-effect waves-light">Let's Talk</button></a>
 
         </div>
       </div>
@@ -73,7 +73,7 @@
         </header><!-- .entry-header -->
         <!--  section  -->
         <section class="col-10 offset-1 col-md-4 offset-md-0">
-          <img class="p-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/decline.svg"  alt="Grain to Grape Logo" loading="lazy"/>
+          <img class="pr-5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/decline.svg"  alt="Grain to Grape Logo" loading="lazy"/>
           <div>
             <h3 class="mt-5 mb-3 font-weight-bold">
               Wine consumption is in decline
@@ -85,7 +85,7 @@
         </section>
          <!--  section  -->
          <section class="col-10 offset-1 col-md-4 offset-md-0">
-          <img class="p-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/Enhancing.svg"  alt="Grain to Grape Logo" loading="lazy"/>
+          <img class="pr-5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/Enhancing.svg"  alt="Grain to Grape Logo" loading="lazy"/>
           <div>
             <h3 class="mt-5 mb-3 font-weight-bold">
             Re-training
@@ -97,7 +97,7 @@
         </section>
          <!--  section  -->
          <section class="col-10 offset-1 col-md-4 offset-md-0">
-          <img class="p-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/Tracking.svg"  alt="Grain to Grape Logo" loading="lazy"/>
+          <img class="pr-5" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/Tracking.svg"  alt="Grain to Grape Logo" loading="lazy"/>
           <div>
             <h3 class="mt-5 mb-3 font-weight-bold">
             Tracking your training
@@ -130,7 +130,7 @@
          <p>We want to make sure that your team is confident, knowledgeable and engaging when it comes to getting your best wines on to the table. </p>
          <p>Our e-learning solution will make your team ‘wine confident’, after that, it’s all about becoming a legend and enhancing the guest experience. </p>
          <p>No more red trousers & tweed please. This is real training for real people</p>
-          <a href="at-home"><button type="button" class="btn btn-primary waves-effect waves-light">find out more</button></a>
+          <a href="lets-talk"><button type="button" class="btn btn-primary waves-effect waves-light">Let's Talk</button></a>
 
       </div>
     </div>
@@ -145,7 +145,7 @@
              <h2 class="display-5">Here’s what other legends said…</h2>
         </header><!-- .entry-header -->
         <!--  section  -->
-        <section class="col-10 offset-1 offset-sm-0 col-sm-6 col-md-4 offset-md-0 offset-lg-1 col-lg-2 ">
+        <section class="col-10 offset-1 offset-sm-0 col-sm-6 col-md-4 offset-md-0  col-lg-2 ">
         
         <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/other_logo1.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
             </div>
@@ -206,6 +206,19 @@
           </div>    
         </section>
         <!--  section  -->   
+          <!--  section  -->
+          <section class="col-10 offset-1 offset-sm-0 col-sm-6  col-md-4 offset-md-0 col-lg-2 ">
+        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/other_logo6.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+            </div>         
+            <div>
+          <i class="text-primary fas fa-quote-left fa-2x mb-3"></i>
+              <p>
+              Grain to Grape is Harry’s brainchild. Simple, yet very much needed. It’s perfectly crafted & delivered with his signature enthusiasm & true desire to educate”
+            </p>
+              <i>- Chris Dennis, Beverage Director, Heads + Tails, Consultant</i>
+          </div>    
+        </section>
+        <!--  section  -->  
       </div>
     </div>
   </div>
@@ -217,7 +230,7 @@
   <!--Grid row-->
   <div class="row wow fadeIn gx-5 content-box-5">
       <header class="entry-header text-center">
-             <h2 class="display-5">What we</h2>
+             <h2 class="display-5">What we do</h2>
         </header><!-- .entry-header -->
     <?php
     // The Query

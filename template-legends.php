@@ -1,4 +1,4 @@
-<?php /* Template Name: Blog*/ get_header(); ?>
+<?php /* Template Name: Legends*/ get_header(); ?>
 <div class="page-img-header d-flex z-depth-3" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
 
   <div class="mask gradient-custom" style="width: 100%; height: 100%;">
@@ -18,10 +18,10 @@
   <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
   <!--Grid row-->
-  <div class="row wow fadeIn gx-5">
+  <div class="row wow fadeIn gx-5 col-lg-10 offset-lg-1">
     <?php
     // The Query
-    $the_query = new WP_Query( 'cat=1&posts_per_page=6' );
+    $the_query = new WP_Query( 'cat=2&posts_per_page=24' );
     //posts_per_page=5'
 
 
@@ -35,7 +35,7 @@
 
         <!--Grid column-->
      
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 d-flex flex-column">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 d-flex flex-column">
         <a href="<?php echo get_permalink() ?>">
      
             <!--Featured image-->
@@ -56,7 +56,7 @@
            
             </div>
            
-            <a href="<?php echo get_permalink() ?>"><button type="button" class="btn btn-primary">Read More </button></a>
+            <a href="<?php echo get_permalink() ?>"><button type="button" class="btn btn-primary">Find out More </button></a>
         </div>
         <!--Grid column-->
 
@@ -72,10 +72,10 @@
 
     </div>
     <div class="call-to-action text-center">
-  <a href="../lets-talk/"><button type="button" class="btn btn-secondary">Let's Talk</button></a>
+  <a href="../lets-talk/"><button type="button" class="btn btn-primary">Let's Talk</button></a>
   </div>
     </div>
-
+  
 </main>
 
 <?php get_footer(); ?>

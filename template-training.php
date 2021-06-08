@@ -48,5 +48,8 @@ $the_query = new WP_Query( 'cat=3&posts_per_page=24' );
   ?>
   </div>
   <!--Grid row-->
+  <div class="call-to-action text-center">
+  <a href="../lets-talk/"><button type="button" class="btn btn-primary">Let's Talk</button></a>
+  </div>
 </main>
 <?php get_footer(); ?>

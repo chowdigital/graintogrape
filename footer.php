@@ -20,7 +20,7 @@
   <div class="row">
   <div class="col-md-6">
 
-  <h3 class="sign-up">Sign up for news, exclusive events & special offers</h3>
+  <h3 class="sign-up">Sign up for weekly words of wisdom</h3>
 
   <!-- Begin Mailchimp Signup Form -->
   <div id="mc_embed_signup">
@@ -97,11 +97,11 @@
          </div>
          <div class="row">
               <div class="col-1 text-center"><i class="fa fa-phone fa-lg"></i></div>
-              <div class="offset-1 col-10"><p> xxx xxxx xxx</p></div>
+              <div class="offset-1 col-10"> <a href="tel:+447986851"><p> +44 (0) 7986 851 901</p></a></div>
           </div>
            <div class="row">
-                     <div class="col-1 text-center"><i class="fa fa-envelope fa-lg"></i></div>
-                     <div class="offset-1 col-10"> xxxx@graintogrape.co.uk</p></div>
+          <div class="col-1 text-center"><i class="fa fa-envelope fa-lg"></i></div>
+                     <div class="offset-1 col-10">  <a href="mailto:cheers@graintogrape.co.uk"><p>cheers@graintogrape.co.uk</p></a></div>
            </div>
                  
                   

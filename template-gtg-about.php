@@ -25,7 +25,7 @@
         <!--  section  -->
         <section class="col-10 offset-1 offset-sm-0 col-sm-6 col-lg-3">
         
-        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/bulb.svg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/profit.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
             </div>
        
           <div>
@@ -38,7 +38,7 @@
         <!--  section  -->
         <section class="col-10 offset-1 offset-sm-0 col-sm-6 col-lg-3">
         
-        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/bulb.svg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/soil.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
             </div>
        
           <div>
@@ -51,7 +51,7 @@
         <!--  section  -->
         <section class="col-10 offset-1 offset-sm-0 col-sm-6 col-lg-3">
         
-        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/bulb.svg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/engage.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
             </div>
        
           <div>
@@ -64,7 +64,7 @@
         <!--  section  -->
         <section class="col-10 offset-1 offset-sm-0 col-sm-6 col-lg-3">
         
-        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/bulb.svg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/modern.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
             </div>
        
           <div>
@@ -98,6 +98,9 @@
 		?>
 
 	</div>
+  <div class="call-to-action text-center">
+  <a href="../lets-talk/"><button type="button" class="btn btn-primary">Let's Talk</button></a>
+  </div>
 	</main><!-- #main -->
 
 
