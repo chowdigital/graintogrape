@@ -44,7 +44,7 @@
         <!--  section  -->
         <section class="col-10 offset-1 offset-sm-0 col-sm-6 col-lg-3">
         
-        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/Psychology.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/psychology.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
             </div>
        
           <div>
@@ -73,7 +73,7 @@ Bespoke upsell strategy and cheat sheet integration to your portal.
         <!--  section  -->
         <section class="col-10 offset-1 offset-sm-0 col-sm-6 col-lg-3">
         
-        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/Engagement.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/engagement.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
             </div>
        
           <div>
@@ -86,7 +86,7 @@ Bespoke upsell strategy and cheat sheet integration to your portal.
         <!--  section  -->
         <section class="col-10 offset-1 offset-sm-0 col-sm-6 col-lg-3">
         
-        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/Enhancing.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="view overlay hm-white-slight rounded mb-4 thumb-wrapper square-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icon/enhancing.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
             </div>
        
           <div>

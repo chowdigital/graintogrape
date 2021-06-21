@@ -604,3 +604,16 @@ footer {
 // End Hide Entry Footer
 
 
+/// Contact fOrm 7 
+
+.form-control:focus, input:focus[type="text"], input:focus[type="email"], input:focus[type="url"], input:focus[type="password"], input:focus[type="search"], input:focus[type="number"], input:focus[type="tel"], input:focus[type="range"], input:focus[type="date"], input:focus[type="month"], input:focus[type="week"], input:focus[type="time"], input:focus[type="datetime"], input:focus[type="datetime-local"], input:focus[type="color"], textarea:focus, select:focus {
+    color: #000;
+}
+.form-control, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select{
+    color: #000;
+}
+
+.form-control:focus, input:focus[type="text"], input:focus[type="email"], input:focus[type="url"], input:focus[type="password"], input:focus[type="search"], input:focus[type="number"], input:focus[type="tel"], input:focus[type="range"], input:focus[type="date"], input:focus[type="month"], input:focus[type="week"], input:focus[type="time"], input:focus[type="datetime"], input:focus[type="datetime-local"], input:focus[type="color"], textarea:focus, select:focus {
+    color: #000 !important;
+  
+}

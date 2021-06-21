@@ -1,4 +1,3 @@
-
 function validateForm() {
     // var x =  document.getElementById('name').value;
     // if (x == "") {
@@ -38,7 +37,7 @@ function validateForm() {
 
 
    $.ajax({
-    url : "https://www.graintogrape.co.uk/wp-content/themes/graintogrape/mail.php",
+    url : "http://localhost:8888/grainToGrape/wp-content/themes/Cloudsdale_2.0/mail.php",
     type: "POST",
     data : formData,
     success: function(data, textStatus, jqXHR)
@@ -58,5 +57,4 @@ function validateForm() {
 
 }
 
-    document.getElementsByClassName('blocks-gallery-item');
-    element.classList.add('class-1');
+   
