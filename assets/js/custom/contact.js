@@ -1,5 +1,6 @@
 function validateForm() {
-    // var x =  document.getElementById('name').value;
+   
+    
     // if (x == "") {
     //     document.getElementById('status').innerHTML = "Name cannot be empty";
     //     return false;
@@ -56,5 +57,17 @@ function validateForm() {
 
 
 }
+
+
+ // launch modal pop up on homepage after 5 seconds 
+
+
+$(window).on('load',function(){
+    var delayMs = 5000; // delay in milliseconds
+    
+    setTimeout(function(){
+        $('#sideModalTR').modal('show');
+    }, delayMs);
+});    
 
    

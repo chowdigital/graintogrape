@@ -36,7 +36,7 @@ get_header();
 			
 </div>
 <div class="call-to-action text-center">
-  <a href="../lets-talk/"><button type="button" class="btn btn-primary">Let's Talk</button></a>
+  <a href="../lets-talk/"><button type="button" class="btn btn-white">Let's Talk</button></a>
   </div>
 	</div>
 

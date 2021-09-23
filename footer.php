@@ -52,7 +52,10 @@
                   </div>
 
 
-
+<div class="mc-field-group input-group">
+    <ul><li style="display:none" ><input type="checkbox" value="1" name="group[70769][1]" id="mce-group[70769]-70769-0" checked><label for="mce-group[70769]-70769-0">Website</label></li>
+</ul>
+</div>
 
                     <div id="mce-responses" class="clear">
                         <div class="response" id="mce-error-response" style="display:none"></div>

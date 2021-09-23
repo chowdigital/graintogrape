@@ -1,5 +1,7 @@
 <?php /* Template Name: ACF Home*/ get_header(); ?>
 
+
+<!-- Full Page Intro -->
 <!-- Full Page Intro -->
 
 <div class="view full-page-intro z-depth-3">
@@ -40,14 +42,35 @@
 
 
 <main>
+	 <!-- Side Modal Top Right -->
+
+<div class="modal fade right" id="sideModalTR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+
+  <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-side modal-bottom-right" role="document">
+
+
+    <div class="modal-content">
+     
+      <div class="modal-body">
+      <?php echo do_shortcode("[stu alias='popup_home']"); ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary waves-effect waves-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Side Modal Top Right -->
 <!-- Block 1 >> -->
 <div class="container">
-    <div class="pt-6 pb-6 z-depth-3">
+    <div class="pt-6 pb-6">
       <div class="row">
-        <div class="image-box-1 col-12 col-lg-6" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/g2g_02.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="image-box-1 col-12 col-lg-6 z-depth-2 right-box-wonky" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/g2g_02.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
         
         </div>
-        <div class="content-box-1 col-12 col-lg-6 d-flex flex-column justify-content-center">
+        <div class="content-box-1 col-12 col-lg-6 d-flex flex-column justify-content-center z-depth-2 left-box-wonky">
 
         <header class="entry-header">
                 <?php the_title( '<h2>', '</h2>' ); ?>
@@ -65,7 +88,8 @@
   </div>
 <!-- << Block 1 -->
 <!-- Block 2 >> -->
-  <div class="pt-6 pb-6 content-box-2 z-depth-3">
+<div class="pt-5 triangle-top"></div>
+  <div class="content-box-2">
     <div class="container pt-5 pb-5">
       <div class="row">
       <header class="entry-header text-center">
@@ -104,15 +128,17 @@
       </div>
     </div>
   </div>
+  <div class="pt-5 triangle-bottom"></div>
+
 <!-- << Block 2 -->
 <!-- Block 3 >> -->
 <div class="container">
-<div class="pt-6 pb-6 z-depth-3">
+<div class="pt-6 pb-6">
     <div class="row">
-    <div class="image-box-1 col-12 col-lg-6" style="background-image: url('<?php the_field('purple_img'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+    <div class="image-box-1 col-12 col-lg-6 z-depth-2 right-box-wonky" style="background-image: url('<?php the_field('purple_img'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
       
       </div>
-      <div class="content-box-3 col-12 col-lg-6 d-flex flex-column justify-content-center">
+      <div class="content-box-3 col-12 col-lg-6 d-flex flex-column justify-content-center z-depth-2 left-box-wonky">
       <?php the_field('purple_copy'); ?>
       
           <a href="lets-talk"><button type="button" class="btn btn-primary waves-effect waves-light">Let's Talk</button></a>
@@ -217,7 +243,7 @@
   <div class="pt-6 pb-6">
    
   <!--Grid row-->
-  <div class="row wow fadeIn gx-5 content-box-5">
+  <div class="row wow fadeIn content-box-5">
       <header class="entry-header text-center">
              <h2 class="display-5">What we do</h2>
         </header><!-- .entry-header -->

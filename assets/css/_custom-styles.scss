@@ -15,6 +15,7 @@
 //  9. Single Post
 // 10. Contact Form Page
 // 11. Customise Wordpress Guttenberg Blocks
+// 12. Wonky Boxes
 
 
 
@@ -52,11 +53,14 @@ body {
     //background: url('http://localhost:8888/BlackBook/wp-content/uploads/2020/08/copper.png') no-repeat 50% fixed / cover;
 }
 a {
-    color:$white-base;
+    color: $orange-base;
 
 }
+ul li a {
+    color: $white-base;
+}
 a:focus, a:hover {
-    color:$green-base;
+    color: $green-base;
 }
 
 
@@ -560,6 +564,86 @@ footer {
 }
 
 
+
+// 12. Wonky Boxes
+// ===========================================================================
+.triangle-top{
+    display: block;
+    background-color: $orange-base;
+    width:100%;
+    height: 50px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    position: relative;
+
+}
+.triangle-bottom{
+    display: block;
+    background-color: $orange-base;
+    width:100%;
+    height: 50px;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    position: relative;
+
+}
+@include media-breakpoint-up(lg) {
+    .triangle-bottom, .triangle-top{
+        height: 100px;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .right-box-wonky{
+        margin-top: 3em;
+        margin-left: 1em;
+        z-index: 1;
+    }
+    .left-box-wonky{
+        margin-bottom: 3em;
+        margin-left: -1em;
+        z-index: 3;
+    }
+
+    .triangle-bottom, .triangle-top{
+        height: 200px;
+    }
+
+}
+
+// ===========================================================================
+// 13. Pop Up Box 
+// ===========================================================================
+// content locker styles 
+.stu-content-locked, .stu-main-outer-wrap {
+    min-height: 500px !important;
+}
+.stu-main-outer-wrap .stu-blur-overlay {
+    top: 0px;
+}
+.stu-content-locked::after {
+    background-image: none;
+}
+// modal styles 
+.modal-header, .modal-body, .modal-footer {
+    background: $green-base;
+    color: $black-base;
+    border-bottom: none;
+    border-top: none;
+}
+.modal .modal-dialog.modal-bottom-right {
+    right: 0px;
+    bottom: 0px;
+}
+@include media-breakpoint-up(md) {
+    .stu-form-wrap {
+        max-width: 100% !important;
+    }
+    .modal .modal-dialog.modal-bottom-right {
+        right: 3px;
+        bottom: 30px;
+    }
+}
+.stu-main-outer-wrap .stu-blur-overlay {
+    margin-top: 0px;
+}
 
 // X. Misc
 // ===========================================================================
